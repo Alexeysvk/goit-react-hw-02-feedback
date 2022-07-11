@@ -35,7 +35,7 @@ render (){
     <section>
         <Section title="Please leave feedback">
          <ButtonsFeedback 
-             options={['good', 'neutral', 'bad']}
+             options={this.state}
              onCountFeedback = {this.countFeedback}
              />
         </Section>

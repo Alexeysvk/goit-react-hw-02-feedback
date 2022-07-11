@@ -29,7 +29,12 @@ const Statistic= ({
 export default Statistic;
 
 Statistic.propTypes = {
-    options: propTypes.number,
+    options:
+      propTypes.shape({
+        good: propTypes.number.isRequired,
+        neutral: propTypes.number.isRequired,
+        bad: propTypes.number.isRequired,
+      }).isRequired, 
     onCountTotalFeedback: propTypes.number,
     onCountPercentagePositiveFeedback: propTypes.number,
 };
